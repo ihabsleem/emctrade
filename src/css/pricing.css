@@ -1,0 +1,28 @@
+.cont-pricing{display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+padding: 2% 5%;}
+.card-pricing{display: flex;
+flex-direction: column;
+min-width: 200px;
+max-width: 390px;
+height: 450px;
+justify-content: space-evenly;
+align-items: center;
+background-color: #eff3f6;padding: 10px;}
+.card-pricing:nth-child(2) {background-color: #eba041;;}
+.card-pricing p{padding: inherit;
+text-align: center;}
+
+.card-pricing h1{padding: inherit;text-align: center;
+font-family: var(--head-font);
+color: var(--head-color);}
+.btn-2d{background-color:#00173c;
+    color:aqua}
+.card-pricing button{padding: 5px 10px;font-size: 1.2em;
+    border: none;
+    }
+    .btn-1d , .btn-3d {
+        background-color: #eba041;
+    }
+  

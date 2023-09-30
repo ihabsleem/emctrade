@@ -1,0 +1,62 @@
+.slider-pro-container{
+
+}
+.mySlides{
+    display: none;
+ 
+ 
+}
+.mySlides img{ width: 300px;
+}
+.numbertext{
+
+}
+.prev , .next {  cursor: pointer;
+  position: absolute;
+  background-color: var(--head-color);
+  top: 50%;
+  height:auto;
+  transform: translate(0,-50%);
+  width: 1.1em;
+  padding: 2px 4px 2px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* The dots/bullets/indicators */
+.container-dot{text-align: center;
+padding-top: 4%;}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+/* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }

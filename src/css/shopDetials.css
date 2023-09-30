@@ -1,0 +1,62 @@
+.shop-d-first { display: flex;
+    padding: 4% 8%;
+height: 50vh;}
+.s-d-product{
+    flex-basis: 25%;
+    padding: 0 ;
+    margin-right: 4%;
+}
+.s-d-head{
+    background-color: #eff3f6;
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2%;
+}
+.s-d-head h2{
+    color: var(--head-color);
+    font-family: var(--head-font);
+    font-size: 2em;
+}
+.s-d-head form {display: flex;
+    align-items: center;}
+.s-d-head .in-de{
+    display: inline-flex;
+    flex-direction: column;
+}
+.in-de button{width: 2em;}
+.s-d-head input{ font-size: 1.5em;
+    height: 40px;
+    width: 25%;
+}
+
+.s-d-head .buy-btn{
+    background-color: var(--head-color);
+    width: 30%;
+    text-transform:uppercase ;
+    padding: 1.7% 1.5%;
+    transition: .5s;
+    border: none;
+    color: beige;
+}
+.counter-btn:hover{
+    background-color: var(--tra-color);
+    border: 1px solid gray;
+    
+}
+.s-d-head .buy-btn:hover{letter-spacing: 1.8px;
+background-color: aqua;
+color: black;}
+@media (max-width:617px) {.shop-d-first { flex-direction: column;
+    padding: 4% 8%;
+height: auto;}
+.s-d-product{padding-bottom: 10%;
+    margin: auto;
+}
+.buy-btn{height: 3em;}
+}
+
+.shop-d-second {}
+
+.shop-d-third {}

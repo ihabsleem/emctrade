@@ -1,0 +1,73 @@
+:root {
+    --main-color : rgb(52, 52, 203);
+    --tra-color : rgb( 15 116 143 / .6);
+    --fa-style-family :"Font Awesome 6 Free";
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.section{ padding: 80px;}
+.services{
+    background-color: aliceblue;
+}
+.master { 
+    text-align: center;
+} 
+.master h2 { font-weight: normal;
+font-size: 40px;position: relative;margin-bottom: 70px;text-transform: uppercase;}
+.master h2::before  {content: ""; position: absolute;height: 2px;background-color:#333;
+    width: 120px;transform: translateX(-50%); bottom: -15px; left: 50%;}
+
+.master h2::after   {content: ""; position: absolute;height: 10px;width: 10px;border: 2px solid #333;
+    transform: translateX(-50%); bottom: -21px; left: 50%;border-radius: 50%;background-color: white;}
+.master p {
+    width: 600px;
+    margin: 0 auto 80px;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
+}
+.services .container{
+    padding-top: 0;
+    margin-top: 3vh;
+    padding-bottom: 100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+@media (min-width:768px) { .services .ser-cont {
+display: grid;
+grid-template-columns: repeat(auto-fill , minmax(450px , 1fr));
+grid-column-gap: 40px;
+grid-row-gap:  60px; 
+}
+    
+}
+.services .ser-box {display: flex;
+
+}
+.services .ser-box i { margin-right: 50px;
+}
+@media (max-width:768px) {.services .ser-box {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+}
+     .services .ser-box i {margin: 0 0 30px;
+
+}
+    
+}
+.services .ser-box h3 {margin-bottom: 30px;
+color: var(--main-color);}
+.services .ser-box p {
+    line-height: 2;
+    color: #777;
+}

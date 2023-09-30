@@ -1,0 +1,76 @@
+:root {
+    --main-color: rgb(52, 52, 203);
+    --tra-color: rgb(15 116 143 / 0.6);
+    --fa-style-family: "Font Awesome 6 Free";
+  }
+.saving {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 600px;
+    position: relative;
+    background-image: url(../image/23.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.saving::before {content: "";                                                                      /*overlay*/
+    background-color: rgba(237, 215, 215, 0.2) ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.saving .img ,.saving .text {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+.saving h1 {
+    padding-bottom: 3rem;
+    color:  rgb(0, 8, 10);
+    font-weight: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.saving h1::before{
+   
+        content: "    ";
+        width: 10px;
+        top: -10px;
+        left: 2rem;
+        position: absolute;
+        height: 2em;
+        display: inline-block;
+        background-color: rgb(105, 131, 218);
+      
+}
+.saving .img {
+    text-align: center;
+    /* position: relative;
+    bottom: -192px; */
+}
+@media (max-width:768px) { .saving .img  {
+    display: none;
+}
+    
+}
+.saving .img img {
+    width: 50%;
+}
+.saving .text {color: rgb(14, 12, 12);
+padding: 50px; 
+background-color: var(--tra-color);}
+.saving .text h2 {
+    font-weight: normal;
+    text-transform: uppercase;margin-bottom: 40px;
+}
+.saving .text li {
+    padding: 10px 0;
+}
+/*
+.saving .text li::before {
+ content: '/f1d8';                                                              adding icon from font awesome
+ font-family: "Font Awesome 5 free";
+*/

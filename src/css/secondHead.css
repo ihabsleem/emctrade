@@ -1,0 +1,38 @@
+/* scondary head    */
+.img-head img {
+    width: 100%;
+    opacity: .7;
+    object-fit: cover;
+    object-position: 0 -200px;
+  }
+  @media (max-width:680px) {.img-head img {object-position: 0 0px;}
+    
+  }
+  .img-head {
+    max-height: 40vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .img-title {
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%,0);
+    font-size: 4vw;
+    letter-spacing: .4em;
+    font-weight: 600;
+    z-index: 2;
+    text-align: center;
+  }
+  @media (max-width: 820px) {
+    .img-title {
+      font-size: 6vw;
+    
+    }
+  }
+  @media (max-width:520px) {
+    .img-title{
+        font-size: 9vw;
+    }
+    
+  }
